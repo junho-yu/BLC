@@ -2,104 +2,127 @@
 <html lang="ko">
 
 <head>
-    <title>FC 발로차-사진첩</title>
+    <title>FC 발로차 어서오고</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial0-scale=1.0">
-    <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </link>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KS1V7ZZBMH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P078WZ5R2G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-KS1V7ZZBMH');
-</script>
-  
-    
+        gtag('config', 'G-P078WZ5R2G');
+    </script>
+   
+
 </head>
-<style>
-    
-    .image-box{
-        width:100%;
-        height:600px;
-        overflow:hidden;
-        margin:0 auto;
-        position:relative;
-      
-    
-    }
-    .image-box-text{
-        position: absolute;
-        top:40%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        color:black;
-    }
-    .image-thumbnail{
-        width: 100%;
-        height:100%;
-        object-fit:cover;
-        opacity: 0.6;
-            }
-            .ST1 {
-        border: 5px solid black;
-        float: left;
-        width: 20%
-    }
 
-    .ST2 {
-        border: 5px solid black;
-        float: right;
-        width: 75%
-</style>
+
 <body>
-
+    <header>
+        
+        <section id="hbody">
+          <article class="nav">
+          <div class="title"><a id="home" href="./index.html" >FC BALOCHA</a></div>
+          <ul id="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./2.html">FC 발로차</a></li>
+            <li><a href="./3.html">Ballery</a></li>
+            <li><a href="./4.html">회비</a></li>
+          </ul>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fas fa-bars"></i>
+          </article>
+        </section>
+      </header>
+     
     <div class="image-box">
-        <img src="soccer.jpg" class="image-thumbnail">
+        <img src="Balmain.jpg" class="image-thumbnail">
         <a href="index.html">
-            <h1 class="image-box-text" style="font-size: 100px;">FC 발로차 공식홈페이지</h1>"
+            
         </a>
+    </div>
 
+    <div style="text-align:center" ;>
+        <input id=Dark_day type="button" value="DarkMode" onclick="
+        darkDayHandler(this)
+                      ">
     </div>
-    <br>
-    <div class="ST1">
-        <ol>
-            <li><a href="1.html">FC 발로차</a></li>
-            <li><a href="2.html">구성원</a></li>
-            <li><a href="3.html">사진첩</a></li>
-        </ol>
+    <hr>
+
+    <div id="container">
+        <img src="1.jpg" alt="photo" id="photo">
     </div>
-    <div class="ST2" margin="10px">
-        <h1>발로차 어서오고~</h1>
-    </div>
+     
+    <ul id="gallery">
+        <li><img src="2.jpg" alt="thumbnail"></li>
+        <li><img src="3.jpg" alt="thumbnail"></li>
+        <li><img src="4.jpg" alt="thumbnail"></li>
+        <li><img src="5.jpg" alt="thumbnail"></li>
+        <li><img src="6.jpg" alt="thumbnail"></li>
+        <li><img src="7.jpg" alt="thumbnail"></li>
+    </ul>
+    <script>
+        var photo = document.getElementById("photo");
+         var thumbnail = document.querySelectorAll("#gallery > li > img");
+        
+         for ( var i = 0; i < thumbnail.length; i++ )
+           thumbnail[i].addEventListener("click", function () {
+        
+             photo.setAttribute("src", this.getAttribute("src"));
+        
+           });
+           </script>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/63ad2ab647425128790a966b/1gle6tn1p';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/63ad2ab647425128790a966b/1gle6tn1p';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KS1V7ZZBMH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-KS1V7ZZBMH');
+
+
+    <!--End of Tawk.to Script-->
+    <!-- <div id="disqus_thread"></div> -->
+    <!-- disqus 댓글작성 <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://blc-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
 </body>
 
 </html>
